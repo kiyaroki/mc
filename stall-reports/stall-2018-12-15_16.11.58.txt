@@ -1,0 +1,448 @@
+Stall report from 2018-12-15 16:11:58 +0100, 43 threads, stalled for at least 30000 ms.
+Heap memory usage: 2185 / 2805 MB (max. 6281 MB).
+Created by sampler 1.80 (MC 1.12).
+
+"Server thread" #18 prio=5
+RUNNABLE
+	at net.minecraftforge.fml.common.eventhandler.ASMEventHandler.invoke(ASMEventHandler.java:90)
+	at net.minecraftforge.fml.common.eventhandler.EventBus.post(EventBus.java:182)
+	at net.minecraftforge.event.ForgeEventFactory.gatherCapabilities(ForgeEventFactory.java:668)
+	at net.minecraftforge.event.ForgeEventFactory.gatherCapabilities(ForgeEventFactory.java:650)
+	at net.minecraft.item.ItemStack.forgeInit(ItemStack.java:1216)
+	at net.minecraft.item.ItemStack.<init>(ItemStack.java:112)
+	at net.minecraft.item.ItemStack.<init>(ItemStack.java:98)
+	at net.minecraft.item.ItemStack.<init>(ItemStack.java:85)
+	at net.minecraft.item.ItemStack.<init>(ItemStack.java:80)
+	at net.minecraft.item.ItemStack.<init>(ItemStack.java:75)
+	at mrtjp.core.world.WorldLib$.hasItem(WorldLib.scala:113)
+	at mrtjp.core.world.WorldLib$.isWoodType(WorldLib.scala:120)
+	at mrtjp.core.world.WorldLib$.isAssociatedTreeBlock(WorldLib.scala:137)
+	at mrtjp.core.world.WorldGenVolcanic$$anonfun$mrtjp$core$world$WorldGenVolcanic$$purgeArea$1$$anonfun$apply$mcVI$sp$1.apply(WorldGenVolcanic.scala:112)
+	at mrtjp.core.world.WorldGenVolcanic$$anonfun$mrtjp$core$world$WorldGenVolcanic$$purgeArea$1$$anonfun$apply$mcVI$sp$1.apply(WorldGenVolcanic.scala:108)
+	at scala.collection.immutable.Range.foreach(Range.scala:160)
+	at mrtjp.core.world.WorldGenVolcanic$$anonfun$mrtjp$core$world$WorldGenVolcanic$$purgeArea$1.apply$mcVI$sp(WorldGenVolcanic.scala:108)
+	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:160)
+	at mrtjp.core.world.WorldGenVolcanic.mrtjp$core$world$WorldGenVolcanic$$purgeArea(WorldGenVolcanic.scala:108)
+	at mrtjp.core.world.WorldGenVolcanic$$anonfun$generate$2.apply$mcV$sp(WorldGenVolcanic.scala:82)
+	at scala.util.control.Breaks.breakable(Breaks.scala:38)
+	at mrtjp.core.world.WorldGenVolcanic.func_180709_b(WorldGenVolcanic.scala:61)
+	at mrtjp.core.world.GenLogicUniform$$anonfun$generate_impl$1.apply$mcVI$sp(genlogic.scala:119)
+	at scala.collection.immutable.Range.foreach$mVc$sp(Range.scala:160)
+	at mrtjp.core.world.GenLogicUniform.generate_impl(genlogic.scala:113)
+	at mrtjp.core.world.TGenerationLogic$class.generate(genlogic.scala:60)
+	at mrtjp.core.world.GenLogicUniform.generate(genlogic.scala:102)
+	at mrtjp.core.world.SimpleGenHandler$$anonfun$subGenerate$1.apply(genhandler.scala:105)
+	at mrtjp.core.world.SimpleGenHandler$$anonfun$subGenerate$1.apply(genhandler.scala:104)
+	at scala.collection.immutable.List.foreach(List.scala:383)
+	at mrtjp.core.world.SimpleGenHandler$.subGenerate(genhandler.scala:104)
+	at mrtjp.core.world.SimpleGenHandler$.generate(genhandler.scala:98)
+	at net.minecraftforge.fml.common.registry.GameRegistry.generateWorld(GameRegistry.java:167)
+	at net.minecraft.world.chunk.Chunk.func_186034_a(Chunk.java:1020)
+	at net.minecraft.world.chunk.Chunk.func_186030_a(Chunk.java:999)
+	at net.minecraft.world.gen.ChunkProviderServer.func_186025_d(ChunkProviderServer.java:157)
+	at net.minecraft.server.management.PlayerChunkMapEntry.func_187268_a(PlayerChunkMapEntry.java:126)
+	at net.minecraft.server.management.PlayerChunkMap.func_72693_b(SourceFile:147)
+	at net.minecraft.world.WorldServer.func_72835_b(WorldServer.java:227)
+	at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.java:756)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(DedicatedServer.java:397)
+	at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.java:668)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:526)
+	at java.lang.Thread.run(Thread.java:748)
+
+"AE Compass Service" #108 prio=5
+WAITING waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@396d5529
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+"BL Environment Event Overrides Downloader #0" #81 daemon prio=5
+WAITING waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@79e22734
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+"Chunk I/O Executor Thread-1" #95 daemon prio=5
+WAITING waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@78b332cf
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+"Computer Dispatch Thread" #833 daemon prio=5
+WAITING waiting on java.lang.Object@d8bd61d
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at dan200.computercraft.core.computer.ComputerThread.lambda$start$1(ComputerThread.java:166)
+	at dan200.computercraft.core.computer.ComputerThread$$Lambda$4038/1304187837.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:748)
+
+"ComputerCraft-HTTP-0" #1052 daemon prio=3
+WAITING waiting on java.util.concurrent.SynchronousQueue$TransferStack@1426cc7
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:458)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+	at java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:924)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+"ComputerCraft-HTTP-1" #5479 daemon prio=3
+WAITING waiting on java.util.concurrent.SynchronousQueue$TransferStack@1426cc7
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:458)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+	at java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:924)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+"ComputerCraft-HTTP-2" #5546 daemon prio=3
+WAITING waiting on java.util.concurrent.SynchronousQueue$TransferStack@1426cc7
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:458)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+	at java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:924)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+"ComputerCraft-HTTP-3" #15683 daemon prio=3
+WAITING waiting on java.util.concurrent.SynchronousQueue$TransferStack@1426cc7
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:458)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+	at java.util.concurrent.SynchronousQueue.take(SynchronousQueue.java:924)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+"Coroutine-15204" #57596 daemon prio=5
+TIMED_WAITING waiting on org.luaj.vm2.LuaThread$State@1d9155db
+	at java.lang.Object.wait(Native Method)
+	at org.luaj.vm2.LuaThread$State.lua_yield(Unknown Source)
+	at org.luaj.vm2.LuaThread.yield(Unknown Source)
+	at org.luaj.vm2.lib.CoroutineLib.invoke(Unknown Source)
+	at org.luaj.vm2.lib.VarArgFunction.onInvoke(Unknown Source)
+	at org.luaj.vm2.TailcallVarargs.eval(Unknown Source)
+	at org.luaj.vm2.LuaClosure.invoke(Unknown Source)
+	at org.luaj.vm2.LuaClosure.execute(Unknown Source)
+	at org.luaj.vm2.LuaClosure.onInvoke(Unknown Source)
+	at org.luaj.vm2.TailcallVarargs.eval(Unknown Source)
+	at org.luaj.vm2.TailcallVarargs.arg1(Unknown Source)
+	at org.luaj.vm2.LuaClosure.call(Unknown Source)
+	at org.luaj.vm2.LuaClosure.execute(Unknown Source)
+	at org.luaj.vm2.LuaClosure.onInvoke(Unknown Source)
+	at org.luaj.vm2.LuaClosure.invoke(Unknown Source)
+	at org.luaj.vm2.lib.BaseLib.pcall(Unknown Source)
+	at org.luaj.vm2.lib.BaseLib$BaseLibV.invoke(Unknown Source)
+	at org.luaj.vm2.LuaClosure.execute(Unknown Source)
+	at org.luaj.vm2.LuaClosure.onInvoke(Unknown Source)
+	at org.luaj.vm2.LuaClosure.invoke(Unknown Source)
+	at org.luaj.vm2.LuaThread$State.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:748)
+
+"Coroutine-15205" #57597 daemon prio=5
+TIMED_WAITING waiting on org.luaj.vm2.LuaThread$State@7debc0c3
+	at java.lang.Object.wait(Native Method)
+	at org.luaj.vm2.LuaThread$State.lua_yield(Unknown Source)
+	at org.luaj.vm2.LuaThread.yield(Unknown Source)
+	at org.luaj.vm2.lib.CoroutineLib.invoke(Unknown Source)
+	at org.luaj.vm2.lib.VarArgFunction.onInvoke(Unknown Source)
+	at org.luaj.vm2.TailcallVarargs.eval(Unknown Source)
+	at org.luaj.vm2.LuaClosure.invoke(Unknown Source)
+	at org.luaj.vm2.LuaClosure.execute(Unknown Source)
+	at org.luaj.vm2.LuaClosure.onInvoke(Unknown Source)
+	at org.luaj.vm2.LuaClosure.invoke(Unknown Source)
+	at org.luaj.vm2.LuaClosure.execute(Unknown Source)
+	at org.luaj.vm2.LuaClosure.call(Unknown Source)
+	at org.luaj.vm2.LuaClosure.execute(Unknown Source)
+	at org.luaj.vm2.LuaClosure.onInvoke(Unknown Source)
+	at org.luaj.vm2.LuaClosure.invoke(Unknown Source)
+	at org.luaj.vm2.LuaClosure.execute(Unknown Source)
+	at org.luaj.vm2.LuaClosure.onInvoke(Unknown Source)
+	at org.luaj.vm2.LuaClosure.invoke(Unknown Source)
+	at org.luaj.vm2.lib.BaseLib.pcall(Unknown Source)
+	at org.luaj.vm2.lib.BaseLib$BaseLibV.invoke(Unknown Source)
+	at org.luaj.vm2.LuaClosure.execute(Unknown Source)
+	at org.luaj.vm2.LuaClosure.call(Unknown Source)
+	at org.luaj.vm2.LuaClosure.execute(Unknown Source)
+	at org.luaj.vm2.LuaClosure.onInvoke(Unknown Source)
+	at org.luaj.vm2.LuaClosure.invoke(Unknown Source)
+	at org.luaj.vm2.LuaThread$State.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:748)
+
+"Coroutine-15206" #57598 daemon prio=5
+TIMED_WAITING waiting on org.luaj.vm2.LuaThread$State@647d071d
+	at java.lang.Object.wait(Native Method)
+	at org.luaj.vm2.LuaThread$State.lua_yield(Unknown Source)
+	at org.luaj.vm2.LuaThread.yield(Unknown Source)
+	at org.luaj.vm2.lib.CoroutineLib.invoke(Unknown Source)
+	at org.luaj.vm2.lib.VarArgFunction.onInvoke(Unknown Source)
+	at org.luaj.vm2.TailcallVarargs.eval(Unknown Source)
+	at org.luaj.vm2.LuaClosure.invoke(Unknown Source)
+	at org.luaj.vm2.LuaClosure.execute(Unknown Source)
+	at org.luaj.vm2.LuaClosure.call(Unknown Source)
+	at org.luaj.vm2.LuaClosure.execute(Unknown Source)
+	at org.luaj.vm2.LuaClosure.onInvoke(Unknown Source)
+	at org.luaj.vm2.LuaClosure.invoke(Unknown Source)
+	at org.luaj.vm2.LuaThread$State.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:748)
+
+"DestroyJavaVM" #20 prio=5
+RUNNABLE
+
+"Ender IO Scheduler" #46 prio=5
+TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at info.loenwind.scheduler.Scheduler.run(Scheduler.java:41)
+
+"File IO Thread" #55 prio=1
+TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at net.minecraft.world.storage.ThreadedFileIOBase.func_75736_b(SourceFile:51)
+	at net.minecraft.world.storage.ThreadedFileIOBase.run(SourceFile:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+"Finalizer" #3 daemon prio=8
+WAITING waiting on java.lang.ref.ReferenceQueue$Lock@586b7d59
+	at java.lang.Object.wait(Native Method)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+
+"ForkJoinPool-1-worker-1" #96 daemon prio=5
+WAITING waiting on scala.concurrent.forkjoin.ForkJoinPool@2bdb2297
+	at sun.misc.Unsafe.park(Native Method)
+	at scala.concurrent.forkjoin.ForkJoinPool.scan(ForkJoinPool.java:2075)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+
+"Netty Epoll Server IO #0" #34 daemon prio=5
+RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait0(Native Method)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:117)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:223)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:247)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at java.lang.Thread.run(Thread.java:748)
+
+"Netty Epoll Server IO #1" #84 daemon prio=5
+RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait0(Native Method)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:117)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:223)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:247)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at java.lang.Thread.run(Thread.java:748)
+
+"Netty Epoll Server IO #2" #86 daemon prio=5
+RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait0(Native Method)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:117)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:223)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:247)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at java.lang.Thread.run(Thread.java:748)
+
+"Netty Epoll Server IO #3" #87 daemon prio=5
+RUNNABLE
+	at io.netty.channel.epoll.Native.epollWait0(Native Method)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:117)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:223)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:247)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at java.lang.Thread.run(Thread.java:748)
+
+"PR RoutingThread #0" #48 daemon prio=5
+WAITING waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@398cd5e3
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.PriorityBlockingQueue.take(PriorityBlockingQueue.java:550)
+	at mrtjp.projectred.transportation.TableUpdateThread.run(router.scala:455)
+
+"PR RoutingThread #1" #49 daemon prio=5
+WAITING waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@398cd5e3
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.PriorityBlockingQueue.take(PriorityBlockingQueue.java:550)
+	at mrtjp.projectred.transportation.TableUpdateThread.run(router.scala:455)
+
+"PR RoutingThread #2" #50 daemon prio=5
+WAITING waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@398cd5e3
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.PriorityBlockingQueue.take(PriorityBlockingQueue.java:550)
+	at mrtjp.projectred.transportation.TableUpdateThread.run(router.scala:455)
+
+"PR RoutingThread #3" #51 daemon prio=5
+WAITING waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@398cd5e3
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.PriorityBlockingQueue.take(PriorityBlockingQueue.java:550)
+	at mrtjp.projectred.transportation.TableUpdateThread.run(router.scala:455)
+
+"Reference Handler" #2 daemon prio=10
+WAITING waiting on java.lang.ref.Reference$Lock@5237e150
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+"Sampler sampling thread 0" #22 daemon prio=6
+TIMED_WAITING waiting on sampler.ca@54c6e96b
+	at java.lang.Object.wait(Native Method)
+	at sampler.ca.a(F:2203)
+	at sampler.cb.run(F:247)
+
+"Sampler watchdog thread" #59 daemon prio=5
+RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:454)
+	at sampler.cw.a(F:93)
+	at sampler.cw.a(F:64)
+	at sampler.cw.a(F:49)
+	at sampler.ap.run(F:57)
+
+"Server Infinisleeper" #17 daemon prio=5
+TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:82)
+
+"Server Watchdog" #56 daemon prio=5
+TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at net.minecraft.server.dedicated.ServerHangWatchdog.run(ServerHangWatchdog.java:80)
+	at java.lang.Thread.run(Thread.java:748)
+
+"Server console handler" #21 daemon prio=5
+RUNNABLE
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	- locked java.io.BufferedInputStream@499879d5
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	- locked java.io.InputStreamReader@16648ec8
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(BufferedReader.java:324)
+	- locked java.io.InputStreamReader@16648ec8
+	at java.io.BufferedReader.readLine(BufferedReader.java:389)
+	at net.minecraft.server.dedicated.DedicatedServer$2.run(DedicatedServer.java:105)
+
+"Signal Dispatcher" #5 daemon prio=9
+RUNNABLE
+
+"Snooper Timer" #16 daemon prio=5
+TIMED_WAITING waiting on java.util.TaskQueue@3b8556f3
+	at java.lang.Object.wait(Native Method)
+	at java.util.TimerThread.mainLoop(Timer.java:552)
+	at java.util.TimerThread.run(Timer.java:505)
+
+"Thread-15" #60 prio=5
+TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at thaumcraft.common.world.aura.AuraThread.run(AuraThread.java:79)
+	at java.lang.Thread.run(Thread.java:748)
+
+"Thread-30" #75 prio=5
+TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at thaumcraft.common.world.aura.AuraThread.run(AuraThread.java:79)
+	at java.lang.Thread.run(Thread.java:748)
+
+"Thread-35" #80 prio=5
+TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at thaumcraft.common.world.aura.AuraThread.run(AuraThread.java:79)
+	at java.lang.Thread.run(Thread.java:748)
+
+"Timer-0" #33 prio=5
+TIMED_WAITING waiting on java.util.TaskQueue@51bf9e61
+	at java.lang.Object.wait(Native Method)
+	at java.util.TimerThread.mainLoop(Timer.java:552)
+	at java.util.TimerThread.run(Timer.java:505)
+
+"Timer-1" #54 prio=5
+TIMED_WAITING waiting on java.util.TaskQueue@2a75e13c
+	at java.lang.Object.wait(Native Method)
+	at java.util.TimerThread.mainLoop(Timer.java:552)
+	at java.util.TimerThread.run(Timer.java:505)
+
+"ic2-poolthread-1" #47 daemon prio=5
+WAITING waiting on ic2.core.util.PriorityExecutor$FixedPriorityQueue@2e45e2b7
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at ic2.core.util.PriorityExecutor$FixedPriorityQueue.take(PriorityExecutor.java:143)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+"ic2-poolthread-2" #280 daemon prio=5
+WAITING waiting on ic2.core.util.PriorityExecutor$FixedPriorityQueue@2e45e2b7
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at ic2.core.util.PriorityExecutor$FixedPriorityQueue.take(PriorityExecutor.java:143)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+"pool-4-thread-1" #52 prio=5
+WAITING waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@58c8a17f
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+"pool-4-thread-2" #53 prio=5
+WAITING waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@58c8a17f
+	at sun.misc.Unsafe.park(Native Method)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+"threadDeathWatcher-2-1" #85 daemon prio=1
+TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at io.netty.util.ThreadDeathWatcher$Watcher.run(ThreadDeathWatcher.java:152)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Thread.java:748)
+
